@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "popping" sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #081b29;
-   color: white;
+    color: white;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@ body{
     z-index: 100;
 }
 
-.logo{
+.logo {
     position: relative;
     font-size: 25px;
     color: #fff;
@@ -37,7 +37,7 @@ body{
     animation: slideRight 1s ease forwards;
 }
 
-.navbar a{
+.navbar a {
     display: inline-block;
     font-size: 25px;
     color: #fff;
@@ -50,11 +50,11 @@ body{
     animation-delay: calc(2s * var(--i));
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: #0ef;
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -66,20 +66,22 @@ body{
     padding: 70px 10% 0;
     color: white;
 }
-.content{
+
+.content {
     display: flex;
 }
+
 .photo {
-   height: 300px;
-   width: 300px;
-   border-radius: 50%;
-   overflow: hidden;
-   border: 15px solid #0693b6;
-   box-shadow: 5px 7px 25px rgba(0, 0, 0, 5);
-   
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #0693b6;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 5);
+
 }
 
-.about-img{
+.about-img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -89,11 +91,11 @@ body{
 
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
@@ -101,17 +103,17 @@ body{
     animation-delay: .7s;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
-.home-content h3 span{
+.home-content h3 span {
     color: #0ef;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -120,14 +122,14 @@ body{
     animation-delay: 1s;
 }
 
-.home-content p{
+.home-content p {
     font-size: 20px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
 
-.home-sci a{
+.home-sci a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -145,13 +147,13 @@ body{
     margin: 30px 15px 30px 0;
 }
 
-.home-sci a:hover{
+.home-sci a:hover {
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
 }
 
-.btn-box{
+.btn-box {
     display: inline-block;
     padding: 12px 28px;
     background: #0ef;
@@ -164,35 +166,35 @@ body{
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef , 0 0 25px #0ef;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 
-.btn-box:hover{
+.btn-box:hover {
     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+        0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;  
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 1.5rem; 
-    padding: 2rem; 
+    gap: 1.5rem;
+    padding: 2rem;
 }
 
 .about-img img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: 60px;
 
 }
 
 .about-text h2 span {
-    color: #007bff; 
+    color: #007bff;
 }
 
 .about-text h4 {
@@ -200,7 +202,7 @@ body{
     font-weight: 600;
     color: #ffffff;
     margin-top: 0.5rem;
-    
+
 }
 
 .about-text p {
@@ -217,179 +219,319 @@ body{
     border-radius: 40px;
 }
 
-#services{
+#services {
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
 }
 
-.container{
+.container {
     padding: 90px;
 }
 
-.sub-title{
+.sub-title {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
 }
 
-.sub-title span{
+.sub-title span {
     color: #0ef;
 }
 
-.service-list{
+.service-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.service-list div{
+.service-list div {
     background-color: transparent;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 13px;
+    font-size: 14px;
+    font-weight: 600px;
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
-                 1px 1px 40px #0053b8f7;
+        1px 1px 40px #0053b8f7;
 }
 
-.service-list div i{
+.service-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.service-list div h2{
+.service-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
 .service-list div:hover {
-    transform: translateY(-10px) scale(1.05); 
+    transform: translateY(-10px) scale(1.05);
     background-color: #00eeff;
-    color: #000000; 
-    transition: transform 0.5s, background-color 0.5s, color 0.5s; 
-}
-.service-list div:hover i {
-    color: #000000; 
+    color: #000000;
+    transition: transform 0.5s, background-color 0.5s, color 0.5s;
 }
 
-section {
+.service-list div:hover i {
+    color: #000000;
+}
+
+#skills {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
 .container1 {
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.heading1 {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
+.Technial_bars {
+    width: 100%;
 }
 
 .Technial_bars .bars {
-    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.Technial_bars .bars:first-child {
-    margin-top: 0;
-}
-
-.Technial_bars .bars:last-child {
-    margin-bottom: 0;
-}
-
-.Technial_bars .bars .info {
-    margin-bottom: 5px;
-}
-
-.Technial_bars .bars .info span {
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.Technial_bars .bars .progress-line {
+.Technial_bars .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
     height: 5px;
-    background-color: #000000;
-    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
+    background-color: black;
 }
 
-@keyframes animate {
-    100% {
+.Technial_bars .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    display: block;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: fill-progress 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fill-progress {
+    to {
         transform: scaleX(1);
     }
 }
 
-.Technial_bars .bars .progress-line span {
-    height: 100%;
-    background-color: #0ef;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
 
 .progress-line.html span {
     width: 90%;
 }
 
 .progress-line.css span {
-    width: 85%;
-}
-
-.progress-line.JavaScript span {
     width: 80%;
 }
 
-.progress-line.ReactJs span {
-    width: 85%;
-}
-
-.progress-line.Java span {
-    width: 90%;
-}
-
-.progress-line.Spring-Boot span {
+.progress-line.JavaScript span {
     width: 75%;
 }
 
-.progress-line.MySQL span {
+.progress-line.ReactJs span {
+    width: 70%;
+}
+
+.progress-line.Java span {
     width: 85%;
 }
 
-.progress-line span::after{
+.progress-line.Spring-Boot span {
+    width: 65%;
+}
+
+.progress-line.MySQL span {
+    width: 80%;
+}
+
+
+.progress-line span::after {
+    content: attr(data-skill-level);
     position: absolute;
-    padding: 1px 8px;
-    background-color: #000000;
+    padding: 2px 5px;
+    background-color: #000;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
     border-radius: 3px;
-    top: -28px;
-    right: -20px;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%);
+    z-index: 2;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.JavaScript span::after {
+    content: "75%";
+}
+
+.progress-line.ReactJs span::after {
+    content: "70%";
+}
+
+.progress-line.Java span::after {
+    content: "85%";
+}
+
+.progress-line.Spring-Boot span::after {
+    content: "65%";
+}
+
+.progress-line.MySQL span::after {
+    content: "80%";
+}
+
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
 
+@keyframes showText {
+    to {
+        opacity: 1;
+    }
+}
 
+.radial-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    position: relative;
+
+}
+
+.heading1:hover {
+    color: #00eeff;
+    transform: translateY(-10px) scale(1.05);
+    transition: transform 0.5s, background-color 0.5s, color 0.5s;
+
+}
+
+.radial-bars svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(270deg);
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar {
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+    stroke-dashoffset: 502;
+}
+
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path3 1s 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+}
 
 
 
@@ -414,8 +556,8 @@ section {
 
 @media (max-width: 768px) {
     .about {
-        grid-template-columns: 1fr; 
-        text-align: center; 
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .about-img img {
@@ -426,42 +568,49 @@ section {
 
 
 
-@keyframes slideRight{
-    0%{
+@keyframes slideRight {
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
-@keyframes slideLeft{
-    0%{
+
+@keyframes slideLeft {
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
-@keyframes slideTop{
-    0%{
+
+@keyframes slideTop {
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
-@keyframes slideBottom{
-    0%{
+
+@keyframes slideBottom {
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
