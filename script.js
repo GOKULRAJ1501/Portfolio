@@ -6,6 +6,8 @@ var typed = new Typed(".text", {
     loop: true
 });
 
+
+
 function sendMail(){
     var params ={
         from_name : document.getElementById("fullName").value,
