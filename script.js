@@ -5,3 +5,15 @@ var typed = new Typed(".text", {
     backDelay: 1000,
     loop: true
 });
+
+function sendMail(){
+    var params ={
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("Email_ID").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_d608tt7" , "template_d1byh51" , params).then(function(res){
+        location.reload();
+        alert("Success! " + res.status)
+    })
+}
